@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: redhat7
+From: centos7
 
 %setup
    # make directory for test MPI program
