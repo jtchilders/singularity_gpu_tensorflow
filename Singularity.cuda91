@@ -1,0 +1,14 @@
+Bootstrap: shub
+From: jtchilders/singularity_gpu_tensorflow:cuda91
+
+%post
+   # install development tools
+   yum -y update
+   yum install -y wget
+   # install CUDA 9.1
+   mkdir /cuda
+   cd /cuda
+   rpm -i cuda-repo-rhel7-9.1.85-1.x86_64.rpm
+   yum -y update
+   yum install -y cuda-tools-9-1.x86_64
+   
