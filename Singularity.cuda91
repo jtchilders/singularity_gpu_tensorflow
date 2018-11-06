@@ -1,5 +1,5 @@
 Bootstrap: shub
-From: jtchilders/singularity_gpu_tensorflow:cuda91
+From: jtchilders/singularity_gpu_tensorflow:mpich
 
 %post
    # install development tools
